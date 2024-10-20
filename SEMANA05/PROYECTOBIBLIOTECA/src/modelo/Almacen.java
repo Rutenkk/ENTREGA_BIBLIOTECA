@@ -1,5 +1,7 @@
 package modelo;
 
+import com.coti.tools.Esdia;
+
 public class Almacen {
 
 
@@ -9,15 +11,18 @@ public class Almacen {
         this.libros = new Libro[cantidad];
     }
     
+    
     public Libro[] getLibros() {
         return libros;
     }
 
-    public void setLibros(Libro[] libros) {
-        this.libros = libros;
-    }
+   public void setLibros(Libro[] libros) {
+       this.libros = libros;
+   }
 
-    public void nuevoLibro(Libro libro){
+    public static Libro nuevoLibro(){
+
+        Libro libro = new Libro();
 
         String titulo = Esdia.readString("Introduce el titulo: ");
         libro.setTitulo(titulo);
@@ -37,7 +42,7 @@ public class Almacen {
         float precio = Esdia.readFloat("Introduce el precio: ");
         libro.setPrecio(precio);
 
-
+        return libro;
 
 
     }
