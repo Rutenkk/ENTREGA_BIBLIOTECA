@@ -72,11 +72,8 @@ public class Almacen {
 
     }
 
-
     
-    //meter en tabla
-   // System.out.println("Título: " + libro.getTitulo() + ", Año de publicacion: " + libro.getAno_publi() + ", Autor: " + libro.getAutor() + "Premio Planeta" + libro.getPremioPlaneta+", Paginas: "+libro.getNumpg()+"Tiempo lectura minutos"+ funcioncalculaminutos+" Precio: "+ libro.getPrecio());
-    public void imprimirLibros() {
+        public void imprimirLibros() {
 
         //aqui declaro guiones, que sirve para no tenerlo que escribir 147 veces y no se pueda saber cuantas veces se escribe
         String guiones = "-".repeat(147);

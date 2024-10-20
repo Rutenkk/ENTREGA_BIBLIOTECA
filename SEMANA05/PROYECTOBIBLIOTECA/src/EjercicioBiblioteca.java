@@ -36,8 +36,17 @@ public class EjercicioBiblioteca {
                 break;
             case 2:
 
-            int ritmo = Esdia.readInt("Introduce el ritmo de lectura: ");
+            if (almacen == null) {
+
+                System.out.println("Primero debes crear un almacén de libros (opción 1).");
+
+                } else {
+
+                     int ritmo = Esdia.readInt("Introduce el ritmo de lectura: ");
             almacen.setRitmoLectura(ritmo);
+            }
+
+           
 
                 break;
             case 3:
@@ -54,10 +63,22 @@ public class EjercicioBiblioteca {
 
                 break;
             case 4:
-                almacen.imprimirLibros();
+
+
+
+            if (almacen == null) {
+
+                System.out.println("Primero debes crear un almacén de libros (opción 1).");
+
+                } else {
+
+                     almacen.imprimirLibros();
+            }
+                
                 
                 break;
             case 5:
+            almacen = null;
                 
                 break;
             default:
